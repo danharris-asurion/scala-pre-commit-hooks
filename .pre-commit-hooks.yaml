@@ -3,6 +3,7 @@
   stages: [commit,push]
   language: python_venv
   entry: sbt-fatal-warnings
+  types: [scala]
   pass_filenames: false
   always_run: true
   minimum_pre_commit_version: '0.19.0'
@@ -11,6 +12,7 @@
   stages: [commit,push]
   language: python_venv
   entry: sbt-fatal-warnings --add_arg='-Ywarn-unused-import'
+  types: [scala]
   pass_filenames: false
   always_run: true
   minimum_pre_commit_version: '0.19.0'
@@ -19,6 +21,7 @@
   stages: [commit,push]
   language: python_venv
   entry: scalafmt
+  types: [scala]
   pass_filenames: false
   always_run: true
   minimum_pre_commit_version: '0.19.0'
@@ -27,6 +30,7 @@
   language: python_venv
   stages: [commit,push]
   entry: sbt-wartremover
+  types: [scala]
   pass_filenames: false
   always_run: true
   minimum_pre_commit_version: '0.19.0'
@@ -35,6 +39,7 @@
   language: python_venv
   stages: [commit,push]
   entry: sbt-scalafix
+  types: [scala]
   pass_filenames: false
   always_run: true
   minimum_pre_commit_version: '0.19.0'
